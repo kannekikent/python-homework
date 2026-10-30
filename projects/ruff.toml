@@ -1,0 +1,8 @@
+# PEP 8 formatting and PEP 257 docstrings for homework projects.
+line-length = 79
+
+[lint]
+select = ["E", "W", "F", "I", "D"]
+
+[lint.pydocstyle]
+convention = "pep257"

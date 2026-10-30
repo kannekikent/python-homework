@@ -4,7 +4,6 @@ from random import choice
 
 import pygame
 
-
 SCREEN_WIDTH = 640
 SCREEN_HEIGHT = 480
 GRID_SIZE = 20
@@ -24,7 +23,7 @@ BORDER_COLOR = (93, 216, 228)
 
 # Переменные сохранены на уровне модуля согласно прекоду задания.
 screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT), 0, 32)
-pygame.display.set_caption('Змейка')
+pygame.display.set_caption("Змейка")
 clock = pygame.time.Clock()
 
 
@@ -155,7 +154,7 @@ def main():
     pygame.init()
     try:
         screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
-        pygame.display.set_caption('Змейка')
+        pygame.display.set_caption("Змейка")
         screen.fill(BOARD_BACKGROUND_COLOR)
         snake = Snake()
         apple = Apple(snake.positions)
@@ -189,7 +188,7 @@ def main():
                 apple.randomize_position(snake.positions)
                 if apple.position is None:
                     won = True
-                    pygame.display.set_caption('Победа! Всё поле заполнено')
+                    pygame.display.set_caption("Победа! Всё поле заполнено")
 
             snake.draw()
             apple.draw()
@@ -198,5 +197,5 @@ def main():
         pygame.quit()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

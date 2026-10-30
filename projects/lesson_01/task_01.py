@@ -1,13 +1,14 @@
 """Домашние задания по Python."""
+
+import random
+import string
+
 print("1 задание")
 tmp_cel = 15
-tmp_fer = (tmp_cel*9/5)+32
-tmp_kel = (tmp_cel+273.15)
+tmp_fer = (tmp_cel * 9 / 5) + 32
+tmp_kel = tmp_cel + 273.15
 print(tmp_fer)
 print(tmp_kel)
-
-
-
 
 
 print("2 задание")
@@ -28,13 +29,7 @@ else:
     print("нет")
 
 
-
-
-
-
 print("3 задание")
-import random
-import string
 
 
 letters = random.choices(string.ascii_uppercase, k=3)
@@ -61,7 +56,6 @@ kol1 = sorted(kol1)
 print(kol1[-1][1], kol1[-2][1], kol1[-3][1])
 
 
-
 print("5 задание")
 n = int(input())
 num = [i for i in range(2, n + 1)]
@@ -74,4 +68,3 @@ while True:
         break
     i = num[ind]
 print(num)
-

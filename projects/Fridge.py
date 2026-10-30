@@ -1,7 +1,7 @@
+"""Учёт партий продуктов и их сроков годности в холодильнике."""
 
 from datetime import date, datetime
 from decimal import Decimal
-
 
 DATE_FORMAT = "%Y-%m-%d"
 

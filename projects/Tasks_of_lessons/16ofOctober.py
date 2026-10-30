@@ -1,3 +1,5 @@
+"""Сохранённые учебные примеры наследования классов."""
+
 # Книги
 # class Book:
 #     def __init__(self, title, author, year):
@@ -6,7 +8,10 @@
 #         self.year = year
 #
 #     def info(self):
-#         return f"книга - {self.title}, автор - {self.author}, год - {self.year}"
+#         return (
+#             f"книга - {self.title}, автор - {self.author}, "
+#             f"год - {self.year}"
+#         )
 # class Ebook(Book):
 #     def __init__(self, title, author, year, format):
 #         # self.title = title
@@ -16,13 +21,16 @@
 #         super().__init__(title, author, year)
 #         self.format = format
 #     def info(self):
-#         return f"книга - {self.title}, автор - {self.author}, год - {self.year}, формат - {self.format}"
+#         return (
+#             f"книга - {self.title}, автор - {self.author}, "
+#             f"год - {self.year}, формат - {self.format}"
+#         )
 # book_cats = Book("Путешествия котов", " Лорд_кот", 2000)
 # ebook_dogs = Ebook("путешествие собак", "барон догвиль", 2003, "электронная")
 # print(ebook_dogs.info())
 # print(book_cats.info())
-#------------------
-#Менеджеры
+# ------------------
+# Менеджеры
 # class Employee:
 #     def __init__(self, id, name, base_money):
 #         self.id = id
@@ -58,8 +66,8 @@
 # print(emp_alex.calculate_salaries())
 # print(manager_ivan.calculate_salaries())
 # print(dev_eva.calculate_salaries())
-#---------------------
-#Машины
+# ---------------------
+# Машины
 # class Transport:
 #     def __init__(self, name):
 #         self.name = name
@@ -96,7 +104,7 @@
 #     def description(self):
 #         return f'Транспорт - {self.name}, объем бака - {self.tank}'
 #
-# #Данные выдуманы и не соответствуют реальности, гуглить времени не было
+# # Данные выдуманы и не соответствуют реальности, гуглить времени не было
 # bike = Bike("Honda", '3 куб.м.')
 # car = Car('Maclaren', '800 лс')
 # plane = Plane('СУ - 134', '20 м')
